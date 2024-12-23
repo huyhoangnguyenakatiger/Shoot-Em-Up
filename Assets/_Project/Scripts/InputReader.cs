@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace shmup
+namespace Shmup
 {
     // [RequireComponent(typeof(PlayerInput))]
     public class InputReader : MonoBehaviour

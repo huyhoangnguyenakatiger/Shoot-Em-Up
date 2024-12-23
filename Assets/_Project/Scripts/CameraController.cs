@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace shmup
+namespace Shmup
 {
     public class CameraController : MonoBehaviour
     {

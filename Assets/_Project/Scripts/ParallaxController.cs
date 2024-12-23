@@ -1,5 +1,5 @@
 using UnityEngine;
-namespace shmup
+namespace Shmup
 {
     public class ParallaxController : MonoBehaviour
     {
