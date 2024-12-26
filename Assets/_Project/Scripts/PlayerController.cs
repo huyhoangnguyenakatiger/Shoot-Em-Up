@@ -36,8 +36,9 @@ namespace Shmup
             var targetRotationAngle = input.Move.x * leanAngle;
             var currentYRotation = transform.localEulerAngles.y;
             var newYRotation = Mathf.LerpAngle(currentYRotation, targetRotationAngle, leanSpeed);
-            transform.localEulerAngles = new Vector3(0,newYRotation,0);
+            transform.localEulerAngles = new Vector3(0, newYRotation, 0);
         }
+
 
     }
 }

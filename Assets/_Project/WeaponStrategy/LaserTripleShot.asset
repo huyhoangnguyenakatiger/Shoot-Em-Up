@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c86b89e6aafe9a48a65af4ea195ff5a, type: 3}
+  m_Name: LaserTripleShot
+  m_EditorClassIdentifier: 
+  damage: 10
+  fireRate: 0.5
+  projectileSpeed: 10
+  projectileLifetime: 4
+  projectilePrefab: {fileID: 5380541129647677277, guid: 680be0d40e4c92a458e07dbe46edffe8, type: 3}
+  spreadAngle: 15
