@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Splines;
 using Utilities;
@@ -11,6 +10,7 @@ namespace Shmup
         SplineContainer spline;
         GameObject weaponPrefab;
         float speed;
+
         public EnemyBuilder SetBasePrefab(GameObject prefab)
         {
             enemyPrefab = prefab;
@@ -38,16 +38,20 @@ namespace Shmup
         public GameObject Build()
         {
             GameObject instance = GameObject.Instantiate(enemyPrefab);
+
             SplineAnimate splineAnimate = instance.GetOrAdd<SplineAnimate>();
             splineAnimate.Container = spline;
             splineAnimate.AnimationMethod = SplineAnimate.Method.Speed;
-            splineAnimate.ObjectUpAxis = SplineComponent.AlignAxis.ZAxis;
+            splineAnimate.ObjectUpAxis = SplineAnimate.AlignAxis.ZAxis;
             splineAnimate.ObjectForwardAxis = SplineAnimate.AlignAxis.YAxis;
             splineAnimate.MaxSpeed = speed;
-            instance.transform.position = spline.EvaluatePosition(0f);
-            // splineAnimate.Play();
             splineAnimate.Play();
 
+            // Weapons in Part 3
+
+            // Set instance transform to spline start position
+            instance.transform.position = spline.EvaluatePosition(0f);
+            // NOTE: if instantiating waves, could set the position along the spline in a staggered value 0f to 1f
 
             return instance;
         }
