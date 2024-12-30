@@ -1712,6 +1712,7 @@ MonoBehaviour:
     guid: 62762b38ce705674bbbe09da5b7f7794
   gameOverUI: {fileID: 1643799435}
   gameWinningUI: {fileID: 2081714468}
+  playerHealth: {fileID: 1346954709}
 --- !u!4 &1058684603
 Transform:
   m_ObjectHideFlags: 0

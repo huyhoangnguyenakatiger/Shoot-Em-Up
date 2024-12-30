@@ -10,6 +10,7 @@ namespace Shmup
         [SerializeField] SceneReference nextLevelScene;
         [SerializeField] GameObject gameOverUI;
         [SerializeField] GameObject gameWinningUI;
+        [SerializeField] Player playerHealth;
 
         public static GameManager Instance { get; private set; }
         public Player Player => player;
@@ -50,6 +51,7 @@ namespace Shmup
 
             if (IsGameWinning())
             {
+                playerHealth.enabled = false;
                 restartTimer -= Time.deltaTime;
 
                 if (gameWinningUI.activeSelf == false)
