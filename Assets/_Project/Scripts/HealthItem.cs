@@ -9,7 +9,7 @@ namespace Shmup
             Player player = other.GetComponent<Player>();
             if (player)
             {
-                other.GetComponent<Player>().AddHealth(10);
+                other.GetComponent<Player>().AddHealth(50);
                 Destroy(gameObject);
             }
 

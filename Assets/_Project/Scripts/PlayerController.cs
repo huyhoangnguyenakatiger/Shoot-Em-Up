@@ -7,8 +7,6 @@ namespace Shmup {
         [SerializeField] float leanAngle = 15f;
         [SerializeField] float leanSpeed = 5f;
 
-        [SerializeField] GameObject model;
-
         [Header("Camera Bounds")] [SerializeField]
         Transform cameraFollow;
 

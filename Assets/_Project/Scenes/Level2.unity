@@ -2732,9 +2732,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed9960440d0773f4eb24effdf09332b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1000
+  maxHealth: 500
   maxFuel: 100
-  fuelConsumptionRate: 1
+  fuelConsumptionRate: 0.5
 --- !u!1 &1443461877
 GameObject:
   m_ObjectHideFlags: 0

@@ -2659,7 +2659,6 @@ MonoBehaviour:
   smoothness: 0.1
   leanAngle: 15
   leanSpeed: 5
-  model: {fileID: 0}
   cameraFollow: {fileID: 330585546}
   minX: -2.6
   maxX: 2.6
@@ -2782,7 +2781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed9960440d0773f4eb24effdf09332b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1000
+  maxHealth: 500
   maxFuel: 100
   fuelConsumptionRate: 0.5
 --- !u!1 &1443461877
@@ -2908,7 +2907,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyTypes:
   - {fileID: 11400000, guid: 7313184251e94ae4d8a2c1f7e5e44076, type: 2}
-  maxEnemies: 10
+  maxEnemies: 30
   spawnInterval: 3
 --- !u!1 &1598644675
 GameObject:
@@ -3819,7 +3818,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9e6af488b4d986459d90dbc5eadfc8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 500
   explosionPrefab: {fileID: 2433282508537954060, guid: 3ef3ae421f71c5c4e97fe12dc2fc6312, type: 3}
   bossStage: {fileID: 74169288}
 --- !u!54 &1894774630
