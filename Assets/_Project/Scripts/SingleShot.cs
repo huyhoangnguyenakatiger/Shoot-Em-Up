@@ -1,16 +1,20 @@
 using UnityEngine;
 
-namespace Shmup {
+namespace Shmup
+{
     [CreateAssetMenu(fileName = "SingleShot", menuName = "Shmup/WeaponStrategy/SingleShot")]
-    public class SingleShot : WeaponStrategy {
-        public override void Fire(Transform firePoint, LayerMask layer) {
+    public class SingleShot : WeaponStrategy
+    {
+        public override void Fire(Transform firePoint, LayerMask layer)
+        {
+            AudioManager.Instance.PlaySingleShot();
             var projectile = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
             projectile.transform.SetParent(firePoint);
             projectile.layer = layer;
-            
+
             var projectileComponent = projectile.GetComponent<Projectile>();
             projectileComponent.SetSpeed(projectileSpeed);
-            
+
             Destroy(projectile, projectileLifetime);
         }
     }

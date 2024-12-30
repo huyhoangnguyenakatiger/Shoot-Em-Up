@@ -8,7 +8,7 @@ namespace Shmup {
         [SerializeField] SceneReference startingLevel;
         [SerializeField] Button playButton;
         [SerializeField] Button quitButton;
-
+                    
         void Awake() {
             playButton.onClick.AddListener(() => Loader.Load(startingLevel));
             quitButton.onClick.AddListener(() => Helpers.QuitGame());
